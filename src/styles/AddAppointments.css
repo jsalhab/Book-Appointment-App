@@ -1,0 +1,19 @@
+.add-apt-warpper {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.apt-heading,
+.apt-btn {
+  background-color: #ef5da8 !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+.apt-btn:hover {
+  background: #ff6eb9 !important;
+}
+
+.error-message {
+  color: #cc0000;
+  font-size: 13px;
+}

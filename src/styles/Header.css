@@ -1,0 +1,93 @@
+.header {
+  overflow: hidden;
+  background-color: rgba(4, 7, 56, 0.9);
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 12px;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+a {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  line-height: 20px;
+}
+
+a:before,
+a:after,
+a > span:before,
+a > span:after {
+  content: "";
+  position: absolute;
+  transition: transform 0.5s ease;
+}
+
+.nav-link {
+  padding-top: 10px;
+}
+
+.nav-link:before {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #ef5da8;
+  transform: scaleX(0);
+  text-decoration: none;
+}
+
+.nav-link:hover:before {
+  transform: scaleX(1);
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  color: #ef5da8;
+  font-size: 20px;
+}
+
+.header a.active {
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+.logo {
+  font-size: 30px !important;
+  font-weight: 700 !important;
+  background: linear-gradient(to right, #ef5da8, #ea2e8f 50%, #ffffff 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+
+.logo:hover {
+  background-position: 0 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
+  }
+}
