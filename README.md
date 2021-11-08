@@ -2,7 +2,7 @@
 
 In this project, I created a React typescript to book an appointment the patient has multiple time options to select from once they booked their appointment for a specific date this available time for that data will be disabled.
 
-You can run the app after install node modules using npm in then npm start
+You can run the app after install node modules using npm i then npm start
 
 # Getting Started with Create React App
 
